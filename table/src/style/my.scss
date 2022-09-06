@@ -10,12 +10,17 @@ body {
   padding: 1rem;
 }
 
+.scroll {
+  overflow-x: auto;
+
+  border-radius: 8px;
+  background-color: $color;
+}
+
 
 .table {
   width: 100%;
   padding: 1rem;
-  border-radius: 8px;
-  background-color: $color;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -29,11 +34,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 165px;
 
     & div {
       display: flex;
       flex-direction: row;
       width: auto !important;
+
     }
 
     & span {
